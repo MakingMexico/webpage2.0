@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   </head>
   <style type="text/css">
     .persian-green-background {
@@ -19,7 +20,7 @@
     }
     .parallax { 
       /* The image used */
-      background-image: url("logo_sin_letras.png");
+      background-image: url("portada.jpg");
 
       height: 100vh;
 
@@ -28,6 +29,7 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+
     }
     .logo {
       padding: 5px;
@@ -39,20 +41,54 @@
     .navbar.transparent.navbar-inverse .navbar-inner {
       background: rgba(0,0,0,0.4);
     }
+    .montserrat {
+      font-family: 'Montserrat';
+    }
+    .screen-center {
+      height: 80vh;
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      background-color: rgba(245, 245, 245, 0.4);
+    }
+    .card-body { 
+      opacity: 1
+    }
   </style>
   
   <body>
     <section class="parallax">
-      <!-- Image and text -->
       <nav class="navbar transparent navbar-inverse navbar-inner">
         <a href="#">
           <img class="logo" src="logo_blanco_sin_fondo.png">
         </a>
+        <!--
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+        -->
       </nav>
+      <div class="screen-center">
+        <div class="card border-light mb-3" style="max-width: 50%; height:33%;">
+          <div class="card-body align-items-center d-flex justify-content-center">
+            <h1 class="montserrat text-center">EL LUGAR DONDE LAS IDEAS SE VUELVEN REALIDAD</h1>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <div class="container">
-      <section>
+    <section>
+      <div class="container">
         <div class="row">
           <div class="col-4"></div>
           <div class="col-4">
@@ -95,8 +131,8 @@
             <img src="producto2.png">
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <footer class="persian-green-background">
       <div class="footer-copyright text-center py-3">© 2019 Copyright: Making México</div>
